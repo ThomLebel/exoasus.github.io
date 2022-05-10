@@ -121,21 +121,32 @@ h3{
     color: #fbb91d;
     transform: rotateZ(-5deg);
 
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     animation: 3s linear 1s infinite alternate AnimationName;
 }
 .cta_banner:hover {
-    box-shadow: 0 0 20px 20px #fbb91d inset, 0 0 10px 0 #fbb91d;
+    box-shadow: 0 0 40px 40px #fbb91d inset, 0 0 0 0 #fbb91d;
     color: #fff;
+    animation: none;
 }
 
 @-webkit-keyframes AnimationName{
-    100%{box-shadow: 0 0 15px 0 #fd6511 inset, 0 0 20px 12px #e24a23;}
+    100%{
+        box-shadow: 0 0 15px 0 #fd6511 inset, 0 0 20px 12px #e24a23;
+        color: #fd6511;
+    }
 }
 @-moz-keyframes AnimationName {
-    100%{box-shadow: 0 0 15px 0 #fd6511 inset, 0 0 20px 12px #e24a23;}
+    100%{
+        box-shadow: 0 0 15px 0 #fd6511 inset, 0 0 20px 12px #e24a23;
+        color: #fd6511;
+    }
 }
 @keyframes AnimationName {
-    100%{box-shadow: 0 0 15px 0 #fd6511 inset, 0 0 20px 12px #e24a23;}
+    100%{
+        box-shadow: 0 0 15px 0 #fd6511 inset, 0 0 20px 12px #e24a23;
+        color: #fd6511;
+    }
 }
 
 .WTB_container{
@@ -198,9 +209,6 @@ h3{
     background-color:white;
     background-clip: content-box;
     padding:2.5% 0;
-    /* border-width: 4px;
-    border-style: solid;
-    border-image: linear-gradient(to right, darkblue, darkorchid) 1; */
 }
 
 .frame_top{
