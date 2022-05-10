@@ -138,6 +138,59 @@ h3{
     100%{box-shadow: 0 0 15px 0 #fd6511 inset, 0 0 20px 12px #e24a23;}
 }
 
+.WTB_container{
+    position: absolute;
+    width: 40%;
+    height: 18%;
+    right: 10%;
+    bottom: 2%;
+    color: #091523;
+    font-size: clamp(6px, 1.5vw, 30px);
+    font-weight:bold;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 3em;
+    border: 2px solid #fbb91d;
+}
+.container{
+    width: 100%;
+    height: 60%;
+}
+.WTB{
+    width: calc(100% / 4);
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    float: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor:pointer;
+    opacity: 0.5;
+    transform: scale(0.8);
+    transition: opacity 1000ms ease, transform 1000ms ease;
+}
+.WTB:hover{
+    opacity: 1;
+    transform: scale(1);
+}
+.WTB.highlight{
+    opacity: 1;
+    transform: scale(1);
+}
+.ldlc{
+    background-image: url(img/LDLC.png);
+}
+.asus{
+    background-image: url(img/ASUS.png);
+}
+.fnac{
+    background-image: url(img/fnac.png);
+}
+.darty{
+    background-image: url(img/darty.png);
+}
 
 .background{
     position: relative;
@@ -256,6 +309,7 @@ h3{
     font-size: clamp(8px, 2vw, 25px);
 }
 .cta_banner2{
+    left:0px;
     bottom: -50%;
     border: 2px solid #fbb91d;
     box-shadow: 0 0 40px 40px #fbb91d inset, 0 0 0 0 #fbb91d;
