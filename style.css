@@ -292,7 +292,7 @@ h3{
 }
 
 .title_banner2{
-    background: linear-gradient(90deg, #fbb91d 8%, #ff4049 75%);
+    background: linear-gradient(90deg, #ff4049 8%, #fbb91d 75%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
