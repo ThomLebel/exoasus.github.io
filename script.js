@@ -2,6 +2,7 @@ let cta_video1, cta_video2, video_overlay, video_player, close_btn, img_podium, 
 let cta_wtb = [];
 let highlightedWTB = 0;
 let highlightInterval;
+let once = true;
 let videoIDs = ["0sjUjl_7nI8", "zIgEaGz_CO4"];
 let wtb_links = [
     "https://www.ldlc.com/fiche/PB00469315.html",
@@ -27,7 +28,6 @@ function init(){
 
     for(let i=0; i<cta_wtb.length; i++){
         cta_wtb[i].addEventListener("click", function(){
-            console.log("test");
             window.open(wtb_links[i], "_blank");
         });
     }
@@ -86,6 +86,7 @@ function leavePodium(){
 
 function highlightWTB(){
     cta_wtb[highlightedWTB].classList.remove("highlight");
+    // once = false;
     highlightedWTB ++;
 
     if(highlightedWTB >= cta_wtb.length) highlightedWTB = 0;
